@@ -10,7 +10,7 @@ namespace XSockets_playground
         private static IXSocketServerContainer container;
         public static void Start()
         {
-            container = Composable.GetExport<IXSocketServerContainer>();
+            container = Composable.GetExport<IXSocketServerContainer>(); 
             container.Start();
         }
     }
