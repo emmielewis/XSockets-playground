@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\webrtc-playground.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,7 +126,9 @@
     <Compile Include="WebRTC\Controller\Models\PeerConnection.cs" />
     <Compile Include="WebRTC\Controller\Models\SignalingModel.cs" />
     <Compile Include="WebRTC\Controller\Models\StreamModel.cs" />
-    <Compile Include="XSockets.Web.Bootstrapper.cs" />
+    <Compile Include="XSockets.Web.Bootstrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
